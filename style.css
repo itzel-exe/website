@@ -3,25 +3,47 @@
   box-sizing: border-box; 
 }
 
-
-
 body {
   font-family: "Roboto Mono", monospace;
   line-height: 1.5;
   color: #222;
 
-  background-image: linear-gradient(to right, #FACB22, #F83600);
-  background-size: cover;
+  /*background-image: linear-gradient(to right, #FACB22, #F83600);*/
+ /* background-size: cover;*/
   background-repeat: no-repeat;
   background-position: center center; 
-  background-attachment: fixed;
-  background-size: cover;
+ /* background-attachment: fixed;*/
   margin: 0;
-
-
-
   border: 3px solid rgb(51, 255, 0);
+  cursor: url('_precision_32x32.png') 20 20, auto;
 }
+/* Force links + buttons to use the same cursor as body */
+a,
+button,
+input,
+textarea,
+select {
+   text-decoration: none !important;
+  cursor: inherit;
+}
+/* Change cursor to white when hovering interactive elements */
+a:hover,
+button:hover,
+input:hover,
+textarea:hover,
+select:hover {
+  cursor: url('_precision_32x32_white.png') 16 16, auto;
+}
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;       /* send behind all content */
+}
+	#sourceText{
+	display:none;} 
 
 .container {
   width: 90%;
@@ -32,7 +54,6 @@ body {
   
   border: 2px solid red;
 }
-
 header {
   color: #000000;
   padding: 1rem 0;
@@ -40,7 +61,6 @@ header {
    border: 3px solid rgb(255, 0, 200);
   
 }
-
 header h1 {
   font-family: "Press Start 2P", system-ui;
   margin-bottom: 0.5rem;

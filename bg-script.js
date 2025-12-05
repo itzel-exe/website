@@ -1,4 +1,3 @@
-
 // Define an array of gradient color pairs to cycle through
 const colors = [
   ['#FFFF00', '#FFA500'],  // yellow to orange
@@ -67,19 +66,3 @@ function animateGradient() {
 
 // Start the gradient animation when the page loads
 animateGradient();
-
-const source = document.getElementById("sourceText").textContent;
-const output = document.getElementById("typeOutput");
-
-let i = 0;
-
-function typeText() {
-  if (i < source.length) {
-    output.textContent += source[i];
-    i++;
-    setTimeout(typeText, 80);
-  }
-  
-}
-
-typeText();
