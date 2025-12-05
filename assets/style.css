@@ -40,36 +40,28 @@ select:hover {
   height: 100%;
   z-index: -1;       /* send behind all content */
 }
-	#sourceText{display:none;} 
-
-.banner{
-  font-family: "Press Start 2P", system-ui;
-  border: 3px solid rgb(51, 255, 0);}
-
+header{ font-family: "Press Start 2P", system-ui;}
+#sourceText{display:none;} 
+#typeOutput{text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); }
 .banner-content{
   width: 90%;
   max-width: 1000px;
   margin: auto;
   padding: 1rem;
-}
-header {
-  color: #000000;
-  padding: 1rem 0;
    text-align: center;
    border: 3px solid rgb(255, 0, 200);
 }
+
 header h1 {
   margin-bottom: 0.5rem;
 }
-
-
-
 main {
   font-family: "Press Start 2P", system-ui;
   font-weight: 800; 
   text-align: center;
   border: 3px solid rgb(106, 0, 255);
 }
+main p{  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* 3px right, 3px down, 5px blur, semi-transparent black */}
 
 main nav{
   font-size: 1rem;
